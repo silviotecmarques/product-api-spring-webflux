@@ -13,7 +13,7 @@ import com.apirest.merchandise.service.ProductService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-@RestController
+//@RestController
 public class ProductController {
 
 	@Autowired
