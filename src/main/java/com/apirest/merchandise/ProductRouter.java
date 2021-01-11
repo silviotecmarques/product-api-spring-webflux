@@ -18,9 +18,9 @@ public class ProductRouter {
 	@Bean
 	public RouterFunction<ServerResponse> reouter(ProductHandler handler){
 		return RouterFunctions
-				.route(GET("/playlist").and(accept(MediaType.APPLICATION_JSON)), handler::findAll)
-				.andRoute(GET("/playlist/{id}").and(accept(MediaType.APPLICATION_JSON)), handler::findById)
-				.andRoute(POST("/playlist").and(accept(MediaType.APPLICATION_JSON)), handler::save);
+				.route(GET("/product").and(accept(MediaType.APPLICATION_JSON)), handler::findAll)
+				.andRoute(GET("/product/{id}").and(accept(MediaType.APPLICATION_JSON)), handler::findById)
+				.andRoute(POST("/product").and(accept(MediaType.APPLICATION_JSON)), handler::save);
 	}
 
 	
